@@ -168,7 +168,7 @@ S3Store.prototype.serve = function(options) {
                 next();
             })
             .pipe(res);
-    };
+    }.bind(this);
 };
 
 // Implement BaseStore::delete(filename, targetDir)
